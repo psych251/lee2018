@@ -1,0 +1,111 @@
+---
+title: "Replication of Experiential or Material Purchase? Social Class Determines Purchase Happiness. Lee, Hall & Wood (2018, Psychological Science)"
+author: "Elizabeth Mortenson (mortenson@stanford.edu)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+---
+
+<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
+
+##Introduction
+
+The selected Lee, Hall, & Wood, 2018 article reappraised the finding that money spent on experiences yielded higher happiness than that allocated to material goods. Given resource distribution varies widely across the population, the authors posited that socio-economic status (IV) would play a significant role in individuals' self-evaluations of subjective happiness (DV) when reflecting on apportioned financial resouces. The authors' define *experiential advantage* as the phenomenon of recalled experiences generating more happiness than material acquisitions. Findings from Study 1 (to be reproduced) indicate differential effects of SES, such that participants from lower-income backgrounds were happier with material purchases (as compared to investing in experiences) while individuals from higher-income backgrounds reported experiential advantage.
+
+Results are of value to my research program along two key dimensions. First, methodologically, the selected study is a replication with alterations to the original measure--I'm keenly interested in getting a deeper understanding of how more nuanced scale design (particularly of extant measures) can lead to increasingly useful and accurate insights. Second, theoretically, through this process I'm excited to understand how subjective assessment measures can be combined with straight-forward survey design and applied broadly to examine racialized experiences. For example, a future research question this might be succesfully mapped onto is whether people assess targets that label certain behaviors or beliefs as "racism" or "racist" as more racially biased than those who avoid this language, and whether that's influenced by participant race.  
+
+###Procedures
+
+The selected study was an attempt to replicate a Van Boven and Gilovich (2003) design; however, Lee et al. (2018), incorporated some important modifications, which will be noted throughout the procedures write-up where appropriate. 
+
+Participants were first given a computer-based survey using Amazon's Mechanical Turk (AMT) and prompted to recall a _recent_* "experiential purchase and object purchase" that lead to an increase in their happiness. Next, participants were asked which purchase made them happier. The presented scale was: -3 = Definitely experiential purchase, 3 = Definitely object purchase.**
+
+Afterward, using the MacArthur Scale of Subjective Social Status, participants were presented with a visual of a ladder consisting of 10 steps. Subjects were instructed to think of the ladder as representing their position in society, with the most educated and wealthy at the top and people with the least respected jobs and education at the bottom. On a scale from 1 (highest) to 10 (lowest) participants self-reported what they believed their socio-economic position to be and responses were reverse-coded.
+
+One challenge to reproducing this finding might be that I am relatively new to AMT, RStudio and programming more generally. Therefore, I anticipate there will likely be some time-management concerns, insofar as it will likely be difficult to accurately predict how long certain tasks should take to complete. Provided study materials appear to be comprehensive, although I believe I will have to investigate further to be able to insert the exact visual stimuli (ladder image) used.
+
+*Instead of having participants compare experiential purchases versus material acquistion from a global perspective (across the lifespan) as in the original, Lee et al. had participants compare more local (recent) spending.
+
+**The current study employs a continuous scale for comparative purchase happiness rather than the dichotomous scale used in the original.     
+
+##Methods
+
+###Power Analysis
+
+Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
+
+###Planned Sample
+
+Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
+
+###Materials
+
+All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+
+###Procedure	
+
+Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+
+###Analysis Plan
+
+Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
+
+**Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
+
+###Differences from Original Study
+
+Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+
+### Methods Addendum (Post Data Collection)
+
+You can comment this section out prior to final report with data collection.
+
+#### Actual Sample
+  Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+
+#### Differences from pre-data collection methods plan
+  Any differences from what was described as the original plan, or “none”.
+
+
+##Results
+
+
+### Data preparation
+
+Data preparation following the analysis plan.
+	
+```{r include=F}
+###Data Preparation
+
+####Load Relevant Libraries and Functions
+
+####Import data
+
+#### Data exclusion / filtering
+
+#### Prepare data for analysis - create columns etc.
+```
+
+### Confirmatory analysis
+
+The analyses as specified in the analysis plan.  
+
+*Side-by-side graph with original graph is ideal here*
+
+###Exploratory analyses
+
+Any follow-up analyses desired (not required).  
+
+## Discussion
+
+### Summary of Replication Attempt
+
+Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
+
+### Commentary
+
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.
