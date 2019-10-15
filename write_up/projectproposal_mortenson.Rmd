@@ -46,9 +46,17 @@ Planned sample size and/or termination rule, sampling frame, known demographics 
 
 All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
 
+"Comparative purchase happiness was assessed with the question, “Between the two purchases, which made you happier?” Responses were reported on a 7-point scale from −3 (definitely experiential purchase) to 3 (definitely object purchase)"
+
+
+
 ###Procedure	
 
 Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+
+"Participants were asked to “think about a recent expe- riential purchase and object purchase that you made to increase your happiness.” No further information about the definition of these purchases was given."
+
+After answering these questions, participants were presented with a series of XX demographics questions, including: 
 
 ###Analysis Plan
 
