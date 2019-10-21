@@ -1,0 +1,4 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,CompHap,MacArthurSES,dem_famincome,dem_pincome,dem_edu,dem_class,dem_household,dem_gender,dem_age,dem_race,mTurkCode
+10/19/19 12:52,10/19/19 12:52,1,,100,34,1,10/19/19 12:52,R_3F2Uqd91Orhe8IT,,,,,37.42300415,-122.1638947,preview,EN,,,6,2,2,1,7,1,56,4,4772319
+10/19/19 18:24,10/19/19 18:25,1,,100,51,1,10/19/19 18:25,R_2cCrIZrpwCcASKB,,,,,37.42300415,-122.1638947,preview,EN,-1,5,4,6,4,4,2,1,1,4,1843830
+10/19/19 18:26,10/19/19 18:26,1,,100,38,1,10/19/19 18:26,R_3j6iA5tySXymy1i,,,,,37.42300415,-122.1638947,preview,EN,-1,10,5,8,1,4,2,2,99,3,4173231
