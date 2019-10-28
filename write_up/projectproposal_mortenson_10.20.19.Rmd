@@ -10,8 +10,6 @@ output:
       collapsed: false
 ---
 
-<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
-
 ##Introduction
 
 The selected Lee, Hall, & Wood, 2018 article reappraised the finding that money spent on experiences yielded higher happiness than that allocated to material goods. Given resource distribution varies widely across the population, the authors posited that socio-economic status (IV) would play a significant role in individuals' self-evaluations of subjective happiness (DV) when reflecting on apportioned financial resouces. The authors' define *experiential advantage* as the phenomenon of recalled experiences generating more happiness than material acquisitions. Findings from Study 1 (to be reproduced) indicate differential effects of SES, such that participants from lower-income backgrounds were happier with material purchases (as compared to investing in experiences) while individuals from higher-income backgrounds reported experiential advantage.
@@ -36,7 +34,14 @@ One challenge to reproducing this finding might be that I am relatively new to A
 
 ###Power Analysis
 
-Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
+Although it wasn't reported in the original publication, I calculated the Pearson's correlation for the original data set and found .2294087, which I believe is the effect size I should use to calculate the number of participants required at various power levels; my procedure is below--this week I'll verify with a TA. 
+
+Based on this value, the study should include 146 participants (80% power), 195 participants (90% power), or 241 participants (95% power). These values were calculated using G*Power.
+
+Participants in the pilot took 2 minutes on average and so it should be about 25 cents per participant, so if we'd like power of 80%, it'll require us to spend about $40.
+
+![](/Users/homefolder/Desktop/lee2018/images/PowerAnalysis.png)
+
 
 ###Planned Sample
 
@@ -74,23 +79,26 @@ Next, participants were presented with eight demographics questions, including:
 7. How old are you? (in years)  
 8. What is your race?
 
+__Link to Qualtrics Replication__
+
+https://stanforduniversity.qualtrics.com/jfe/form/SV_cvyQcGW8h07edXn
+
 ###Analysis Plan
 
 My analyses will attempt to reproduce the regression from the original paper, in addition to reporting the Pearson correlation for the original data (per Mike's suggestion as this was absent the results) and the new data set. I may also plot their data and create a regression table in the final paper.
 
 **Key analysis of interest** 
 
-Key analysis will be "a regression analysis predicting comparative purchase happiness from social class," as stated in original publication, which "revealed that social class positively predicted happiness." My plan is to reproduce this finding by running a linear regression, which appears to me the most appropriate method for predicting the DV from the IV and generating a correlation similar to that presented in the study: regression type was not given in the publication, but please let me know if there is a better approach.
+Key confirmatory analysis will be "a regression analysis predicting comparative purchase happiness from social class," as stated in original publication, which "revealed that social class positively predicted happiness." Second, I'll conduct an analysis that examines where comparative purchase happiness differs significantly from zero (the midpoint of the scale) using confidence intervals for the fitted values of the regression line. My analytic approach should result in a figure (and correlation) that emulates that presented in the article. My current analytic plan does not include standardizing the beta. Both the IV (SES measure) and DV (subjective happiness rating) require reverse coding. 
 
-After visiting the stats deptartment, I'm under the impression that if the beta was standardized, this would have been reported in the paper. As Julie noted, because it wasn't reported in the original manuscript, my current analytic plan does not include standardizing the beta, but please let me know if it would be worth asking the original authors to clarify.
 
 **Strategy**  
 
 1. Exclusions: Currently intend to include all participants, as the original study had no exclusions.
 
-2. Cleaning: Using mockup Qualtrics survey, run test data (non-pilot) to ensure values are accurately coded, question labels from the build-phase translate to being intuitive for data analysis. Data will need to be converted from wide to long in order to make it tidyverse compatible. Several unnecessary, Qualtrics-generated columns will be removed as well (e.g., start date, end date, etc.).
+2. Cleaning: Tidy data by removing unnecessary columns (e.g., start date, end date, etc.), convert from wide to long, and ensure item values are accurately coded and that question labels from the build-phase translate to being intuitive for data analysis. 
 
-3. Analysis: Run a linear regression to see whether SES predicts subjective happiness rating. The figure also indicates that the authors found values where "comparative purchase happiness was significantly different from 0," which I believe was done using a t-test. To the best of my knowledge these values weren't generated from the regression, making this an additional statistical test, and from the outline provided on Canvas it seems we are intended to find a single analysis. While this might technically be outside the scope of the work, I will consult with someone from the statistics department this week to determine if the values can be found with a single analytical approach. If not, I plan to run the analyses in order to get a strong approximation of the figure in the paper after the pilot data is collected. Both the IV (SES measure) and DV (subjective happiness rating) require reverse coding. 
+3. Analysis: Run a linear regression to see whether SES predicts subjective happiness rating. The original figure indicates that the authors found values where "comparative purchase happiness was significantly different from 0." After speaking with some stats graduate students, I believe this was determined by using confidence intervals around the fixed values of the regression line and finding the values at which (out to two decimal places) the intervals are no longer inclusive of zero. This is the approach I am going to take in my analysis.
 
 ###Differences from Original Study
 
@@ -116,86 +124,137 @@ You can comment this section out prior to final report with data collection.
 
 Data preparation following the analysis plan.
 
-```{r, eval=FALSE}
-####Load Relevant Libraries and Functions
-install.packages("tidyverse")
+
+```{r}
+
+#load library 
 library("tidyverse")
 ```
 
-```{r, eval=FALSE}
-###Import data
- lee <- read_csv("251_Reproduce_October 19, 2019_16.00.csv")
+
+
+```{r Import data}
+
+#import data
+ lee <- read_csv("251_Reproduce_October 26, 2019_19.10.csv")
 
 ```
 
 ###Data Preparation
 
-```{r, eval=FALSE}
-#Creating subject ID row and removing unnecessary columns
+```{r Removing rows and columns}
+
+#Remove first two rows
+
 lee2 <- lee %>% 
-  select(18:27) %>% 
- filter(CompHap %in% 
-          c("-1", "-2", "-3", "0", "1", "2", "3")) %>% 
- mutate(subid = row_number())
+  filter(!((IPAddress == "IP Address") |
+           IPAddress == "{\"ImportId\":\"ipAddress\"}")) %>% 
   
+   mutate(subid = row_number()) %>%                     #Insert subject ID row
+  select(contains("subid"), CompHap, MacArthurSES)       #Select relevant columns
+
+```
+
+```{r Recode and rename variables}
+
 #Recoding IV and DV measures and renaming
- lee3 <- lee2 %>% 
- mutate(happy=recode(lee2$CompHap, 
+ d <- lee2 %>%         
+ mutate(ComparativeHappiness=recode(lee2$CompHap, 
                      `2` = -2, `3` = -3, 
                      `1` = -1, `-3` = 3, 
                      `-1` = 1, `-2` = 2)) %>% 
-mutate(SES=recode(lee2$MacArthurSES, 
+mutate(MacArthurScale=recode(lee2$MacArthurSES, 
                   `1` = 10, `2` = 9, `3` = 8,
                   `4` = 7, `5` = 6, 
                   `6` = 5, `7` = 4, 
                   `8` = 3, `9` = 2, `10` = 1))
- View(lee3)
- 
- #Converting wide to long format  
-d <- lee3 %>% 
- gather(Measures, Values, 1:10)
- View(d)
+
+#Note: data is in long format currently, but may change if I do exploratory analyses, at which point I'll convert to long. 
 
 ```
+
+
+
 
 ### Confirmatory analysis
 
-*A little data visualization*
-```{r, eval=FALSE}
-d %>%
-ggplot(aes(x = SES, y = happy)) +
- geom_point(colour = "blue")
+
+*Getting Pearson correlation*
+
+
+```{r}
+
+cor(d$ComparativeHappiness, d$MacArthurScale)
 
 ```
 
-*Getting Pearson correlation*
-```{r, eval=FALSE}
+*Finding the confidence intervals for fitted values in a linear regression*
 
-cor(d$happy, d$SES)
+```{r CI to determine where y significantly differs from 0}
+
+l <- lm(ComparativeHappiness~MacArthurScale,data=d)      #run regresssion & assign variable
+
+#Generate a list of CIs for each IV value--locate values that have CIs not intersecting 0
+
+predict(l,newdata = data.frame
+        (MacArthurScale=d$MacArthurScale),
+        interval="confidence",level = 0.95)
+
+```
+
+*The sample from pilot a is small (n=8) making the CIs listed above broad. As such, all current CIs encompass 0; identifying significant values will happen after a larger sample is collected (pilot b).* 
+
+
+```{r narrow down significant values}
+
+#CIs will give interger values that can be manually reviewed to find significant values
+  #the 7.02 in the code below is as an example
+
+ci = predict(l,newdata = data.frame
+             (MacArthurScale=7.02), 
+             interval="confidence",level = 0.95)
+ci
+
+```
+
+
+*Looking at the p-value*
+
+```{r}
+
+ summary(lm(ComparativeHappiness~MacArthurScale,data=d))
 
 ```
 
 
 *Plotting the model*
-```{r, eval=FALSE}
+
+```{r}
 
 figure <- d %>%
- ggplot(aes(x = SES, y = happy)) +
- geom_point(colour = "red") +
+ ggplot(aes(x = MacArthurScale, y = ComparativeHappiness)) +
  geom_smooth(method = "lm", fill = NA)
 
 figure + geom_hline(yintercept=0, color = "black") +
-  geom_vline(xintercept = 0, color = "black") +
-  geom_vline(xintercept = XX, linetype="dashed", color = "blue") +
-  geom_vline(xintercept = XX, linetype="dashed", color = "blue")
+  geom_vline(xintercept = 0, color = "black") #+
 
-  
+#Dashed lines (coded below) will be added during pilot b once sample is large enough to evalute
+#  geom_vline(xintercept = XX, linetype="dashed", color = "blue") +
+ # geom_vline(xintercept = XX, linetype="dashed", color = "blue")
+
+#Note: My data is fairly skewed but hopefully will even out with bigger n. 
+
 ```
 
 
 *Side-by-side graph with original graph is ideal here*
+![](/Users/homefolder/Desktop/lee2018/images/OriginalFigure.png)
+__Original Figure from Lee et al. paper__
+
+
 
 ###Exploratory analyses
+
 
 Any follow-up analyses desired (not required).  
 
