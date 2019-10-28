@@ -1,8 +1,0 @@
-StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,CompHap,MacArthurSES,dem_famincome,dem_pincome,dem_edu,dem_class,dem_household,dem_gender,dem_age,dem_race,mTurkCode
-10/19/19 18:24,10/19/19 18:25,1,,100,51,1,10/19/19 18:25,R_2cCrIZrpwCcASKB,,,,,37.42300415,-122.1638947,preview,EN,-1,5,4,6,4,4,2,1,1,4,1843830
-10/19/19 18:26,10/19/19 18:26,1,,100,38,1,10/19/19 18:26,R_3j6iA5tySXymy1i,,,,,37.42300415,-122.1638947,preview,EN,-1,10,5,8,1,4,2,2,99,3,4173231
-10/19/19 21:00,10/19/19 21:00,1,,100,24,1,10/19/19 21:00,R_3DtJEvVoHVFrqMO,,,,,37.42300415,-122.1638947,preview,EN,2,8,5,6,3,5,2,1,1,6,6703042
-10/19/19 21:00,10/19/19 21:01,1,,100,24,1,10/19/19 21:01,R_C1w6XicpUx8FYAx,,,,,37.42300415,-122.1638947,preview,EN,-2,1,9,8,4,3,3,1,4,5,6524428
-10/19/19 21:01,10/19/19 21:01,1,,100,27,1,10/19/19 21:01,R_2Yljksbzhz02NcG,,,,,37.42300415,-122.1638947,preview,EN,-3,4,5,8,4,4,5,1,7,3,1845442
-10/19/19 21:02,10/19/19 21:02,1,,100,30,1,10/19/19 21:02,R_2wHm7uoK8vWN8W4,,,,,37.42300415,-122.1638947,preview,EN,2,9,5,5,3,2,1,1,22,1,978653
-10/19/19 21:02,10/19/19 21:03,1,,100,30,1,10/19/19 21:03,R_3q9E5OkR8INOuTm,,,,,37.42300415,-122.1638947,preview,EN,-3,3,9,12,4,6,8,2,86,1,5213323
