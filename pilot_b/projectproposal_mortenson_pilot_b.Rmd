@@ -12,9 +12,9 @@ output:
 
 ## Introduction
 
-The selected Lee, Hall, & Wood, 2018 article reappraised the finding that money spent on experiences yielded higher happiness than that allocated to material goods. Given resource distribution varies widely across the population, the authors posited that socio-economic status (IV) would play a significant role in individuals' self-evaluations of subjective happiness (DV) when reflecting on apportioned financial resouces. The authors' define *experiential advantage* as the phenomenon of recalled experiences generating more happiness than material acquisitions. Findings from Study 1 (to be reproduced) indicate differential effects of SES, such that participants from lower-income backgrounds were happier with material purchases (as compared to investing in experiences) while individuals from higher-income backgrounds reported experiential advantage.
+The selected Lee, Hall, & Wood, 2018 article replicated the finding that experiential purchases yielded greater happiness than material goods. Given resource distribution varies widely across the population, the authors posited that socio-economic status (IV) would play a significant role in individuals' self-evaluations of subjective happiness (DV) when reflecting on apportioned financial resouces. The authors define *experiential advantage* as experiential purchases generating more happiness than material goods. Findings from Study 1 (to be replicated) indicate differential effects of SES, such that participants from lower-income backgrounds were happier with material goods (as compared to spending money on experiences) while individuals from higher-income backgrounds reported experiential advantage.
 
-Results are of value to my research program along two key dimensions. First, methodologically, the selected study is a replication with alterations to the original measure--I'm keenly interested in getting a deeper understanding of how more nuanced scale design (particularly of extant measures) can lead to increasingly useful and accurate insights. Second, theoretically, through this process I'm excited to understand how subjective assessment measures can be combined with straight-forward survey design and applied broadly to examine racialized experiences. For example, a future research question this might be succesfully mapped onto is whether people assess targets that label certain behaviors or beliefs as "racism" or "racist" as more racially biased than those who avoid this language, and whether that's influenced by participant race.  
+Results are of value to my research program along two key dimensions. First, methodologically, the modifications made in the original study to the established measure offer an opportunity for me to explore how improved scale design (particularly of extant measures) can lead to more informative data. Second, theoretically, through this process I'm excited to understand how subjective assessment measures can be combined with straight-forward survey design and applied broadly to examine racialized experiences. For example, this approach might be useful for a future research question investigating whether framing biased behaviors or beliefs along a continuum yields significantly different results from a dichotomous scale. 
 
 ### Procedures
 
@@ -83,16 +83,16 @@ https://stanforduniversity.qualtrics.com/jfe/form/SV_cvyQcGW8h07edXn
 
 ### Analysis Plan
 
-My analyses will attempt to reproduce the regression from the original paper. I will also calculate the Pearson correlation for the original data and the new data set. I may also plot their data and create a regression table in the final paper.
+My analyses will attempt to replicate the regression from the original paper. I will also calculate the Pearson correlation for the original data and new data set. 
 
 **Key analysis of interest** 
 
-Key confirmatory analysis will be "a regression analysis predicting comparative purchase happiness from social class," as stated in original publication, which "revealed that social class positively predicted happiness." My analytic approach should create a similar figure (and correlation) to that in the original article. My current analytic plan does not include standardizing the beta. Both the IV (SES measure) and DV (subjective happiness rating) require reverse coding. 
+Key confirmatory analysis will be "a regression analysis predicting comparative purchase happiness from social class," as stated in original publication, which "revealed that social class positively predicted happiness." My analytic approach should replicate, and therefore generate, something closely approximating the original figure. My current analytic plan does not include standardizing the beta. Both the IV (SES measure) and DV (subjective happiness rating) require reverse coding. 
 
 
 **Strategy**  
 
-1. Exclusions: Currently intend to include all participants, as the original study had no exclusions.
+1. Exclusions: Currently plan to include all participants, as the original study had no exclusions.
 
 2. Cleaning: Tidy data by removing unnecessary columns (e.g., start date, end date, etc.), convert from wide to long, and ensure item values are accurately coded and that question labels from the build-phase translate to being intuitive for data analysis. 
 
@@ -134,7 +134,7 @@ library("tidyverse")
 ```{r Import data}
 
 #import data
- lee <- read_csv("251_Reproduce_October 26, 2019_19.10.csv")
+ lee <- read_csv("251_Reproduce_November 24, 2019_04.17.csv")
 
 ```
 
@@ -153,6 +153,7 @@ lee2 <- lee %>%
 
 ```
 
+
 ```{r Recode and rename variables}
 
 #Makes character class numeric
@@ -163,8 +164,19 @@ lee2$MacArthurSES <- as.numeric(lee2$MacArthurSES)
 d <- lee2 %>%         
  mutate(ComparativeHappiness=CompHap*-1) %>% # this recodes the two columns
   mutate(MacArthurScale=MacArthurSES*-1)
-  
+
 ```
+
+*Plotting the data*
+
+Below the data from pilot b is plotted, and it already looks like the regression line is going to trend in the opposite direction of that in the original figure; however, this seems unconcerning given N=4 for pilot b. 
+
+```{r}
+d %>%
+ggplot(aes(x = MacArthurSES, y = CompHap)) +
+ geom_point(colour = "blue")
+```
+
 
 
 ### Confirmatory analysis
@@ -194,23 +206,24 @@ figure + geom_hline(yintercept=0, color = "black") +
   labs(y = "Comparative Purchase Happiness")  +
   ggthemes::theme_few()  
 
-#Dashed lines (coded below) will be added during pilot b once sample is large enough to evalute
+#Dashed lines (coded below) will be added once sample size is large enough to calculate
 #  geom_vline(xintercept = XX, linetype="dashed", color = "blue") +
  # geom_vline(xintercept = XX, linetype="dashed", color = "blue")
 
+#As mentioned above, the N here is very small (4), so it's unsurprising that this figure does not replicate the original study. The x-intercept is near that of the original. 
 
 ```
-
 
 *Side-by-side graph with original graph is ideal here*
 ![](/Users/homefolder/Desktop/lee2018/images/OriginalFigure.png)
 __Original Figure from Lee et al. paper__
 
 
-
 ### Exploratory analyses
 
-Although not an appropriate analysis to replicate as a key findingg, I intend to also examine where comparative purchase happiness differs significantly from zero (the midpoint of the scale) using confidence intervals for the fitted values of the regression line.
+The figure in the original publication includes dashed lines (SEE: above) indicating the MacArthur scale values that differ significanlty from zero. As part of my exploratory analyses I intend to examine where comparative purchase happiness differs from the midpoint of the scale (significantly from zero) using confidence intervals for the fitted values of the regression line.
+
+I will also plot their data and create a regression table.
 
 *Getting Pearson correlation*
 
@@ -218,7 +231,6 @@ Although not an appropriate analysis to replicate as a key findingg, I intend to
 ```{r}
 
 cor(d$ComparativeHappiness, d$MacArthurScale)
-cor
 
 ```
 
