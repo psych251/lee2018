@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/559346/2272169b318f430a88ac517df55c67b0
+bundleId: https://api.rpubs.com/api/v1/document/559346/2272169b318f430a88ac517df55c67b0
+url: http://rpubs.com/elmortenson/559346
+when: 1576206463.36358

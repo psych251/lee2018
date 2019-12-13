@@ -1,0 +1,149 @@
+﻿V2,V3,V4,V5,V7,V8,V9,V10,Q11,Q17,CompHap,MacArthurSES,dem_famincome,dem_pincome,dem_edu,dem_class,dem_household,dem_gender,dem_gender_TEXT,dem_age,dem_race,dem_race_TEXT,Q12,Q13,Q14,LocationAccuracy
+ResponseSet,Name,ExternalDataReference,EmailAddress,Status,StartDate,EndDate,Finished,"By answering the following questions, you are participating in a study being performed by cogniti...",We are interested in how you spend your discretionary money. Discretionary money refers to money...,Think about a recent experiential purchase and object purchase that you made to increase your hap...,Think of this ladder as representing where people stand in the U.S. At the top of the ladder are...,"About how much is your yearly family income? (If more than one person working, add all).",About how much is your yearly personal income?,What is the highest level of education you have completed?,What would you describe your family and yourself?,"Currently, what is the number of your household? (If a father, a mother, and a child are living t...",What is your gender?,What is your gender?-TEXT,How old are you? (in years),What is your race?,What is your race?-TEXT,Thank you for participating in our survey! This study explores how subjective socioeconomic statu...,"Is there anything I could do to improve my MTurk studies? (e.g. clearer introduction, higher rewa...",Do you think the reward for this HIT is fair? ,LocationAccuracy
+Default Response Set,Anonymous,,,0,12/4/19 0:10,12/4/19 0:11,1,1,1,1,9,2,2,2,4,1,3,,33,4,,1,"No, but thanks for asking, and the compensation is very fair.",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:10,12/4/19 0:11,1,1,1,-1,6,3,3,3,4,4,2,,36,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:10,12/4/19 0:11,1,1,1,-3,5,4,4,2,4,1,1,,37,1,,1,no issues,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:10,12/4/19 0:11,1,1,1,-2,6,8,8,4,4,1,1,,32,1,,1,no. okay hit thanks.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:10,12/4/19 0:12,1,1,1,-2,7,4,4,2,4,2,2,,45,1,,1,"None, thank you.",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:12,1,1,1,1,6,5,5,3,3,1,1,,32,4,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:12,1,1,1,2,5,8,6,2,4,3,1,,41,1,,1,,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:13,1,1,1,3,5,5,5,2,5,1,1,,30,3,,1,None,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:13,1,1,1,1,5,15,1,2,3,3,1,,33,1,,1,it is just fine!,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:13,1,1,1,-1,7,6,3,2,5,4,1,,37,1,,1,"no, it's fine, thanks",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:10,12/4/19 0:13,1,1,1,-3,7,10,1,3,3,4,1,,34,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:13,1,1,1,-3,9,2,2,2,6,2,1,,28,1,,1,I thought it was great as it was. Thank you!,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:13,1,1,1,-3,6,15,11,2,3,5,1,,27,3,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:13,1,1,1,-2,4,5,2,2,5,4,2,,31,1,,1,higher reward,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:13,1,1,1,2,8,6,2,2,5,4,2,,38,1,,1,I can't think of anything to improve the study.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:14,1,1,1,-3,5,7,5,3,4,2,2,,57,3,,1,nothing that I can think of,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:14,1,1,1,-1,7,4,4,2,5,5,2,,37,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:12,12/4/19 0:14,1,1,1,-3,3,12,8,3,3,4,1,,43,4,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:13,12/4/19 0:14,1,1,1,2,4,7,7,3,3,1,1,,30,1,,1,Everything was fine.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:12,12/4/19 0:14,1,1,1,-2,8,2,1,2,6,2,2,,29,2,,1,higher reward,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:13,12/4/19 0:15,1,1,1,-2,8,4,4,2,6,3,2,,33,1,,1,No,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:12,12/4/19 0:15,1,1,1,-1,8,11,2,3,3,3,1,,36,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:15,1,1,1,3,5,5,5,3,3,1,1,,26,4,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:14,12/4/19 0:16,1,1,1,1,4,15,2,3,1,3,1,,34,4,,1,"It was a pretty simple study so it was fine, higher reward is always turkcrowd favorite",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:10,12/4/19 0:16,1,1,1,3,9,1,1,2,6,3,2,,29,3,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:11,12/4/19 0:16,1,1,1,-2,7,8,8,3,3,2,1,,55,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:14,12/4/19 0:16,1,1,1,-2,6,5,1,3,3,5,2,,35,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:16,12/4/19 0:17,1,1,1,2,4,6,6,3,4,1,1,,39,4,,1,"Nope, everything was good",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:10,12/4/19 0:18,1,1,1,1,8,15,8,3,5,3,2,,33,2,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:18,12/4/19 0:19,1,1,1,-1,3,4,4,4,5,1,1,,30,1,,1,The study was underpaid for the time and work required. Please consider paying a more fair rate for your research.,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:17,12/4/19 0:19,1,1,1,-2,8,3,1,2,2,3,2,,30,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:15,12/4/19 0:19,1,1,1,-3,4,4,4,3,4,1,2,,58,1,,1,This was nice. Thanks.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:17,12/4/19 0:19,1,1,1,-3,5,4,4,3,4,2,1,,27,1,,1,I like it as is,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:16,12/4/19 0:19,1,1,1,3,2,4,1,2,6,2,1,,34,3,,1,"Everything was clear, thank you!",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:18,12/4/19 0:20,1,1,1,-2,4,4,4,3,4,1,2,,34,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:18,12/4/19 0:21,1,1,1,-3,6,13,11,4,4,2,1,,40,1,,1,The reward should be raised slightly 25 cents is a little underpaid.,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:20,12/4/19 0:21,1,1,1,3,7,12,6,3,4,2,1,,31,4,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:21,12/4/19 0:22,1,1,1,2,5,10,10,3,3,3,1,,37,4,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:18,12/4/19 0:23,1,1,1,-2,8,4,1,2,5,3,1,,29,3,,1,none,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:20,12/4/19 0:24,1,1,1,2,6,6,6,4,3,5,1,,25,1,,1,You created a good survey. Thank you! ,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:19,12/4/19 0:25,1,1,1,0,4,13,6,3,3,,2,,39,3,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:23,12/4/19 0:25,1,1,1,-3,5,7,1,3,4,6,2,,47,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:24,12/4/19 0:25,1,1,1,0,6,4,2,2,4,4,1,,28,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:24,12/4/19 0:26,1,1,1,2,7,4,4,2,4,2,2,,40,1,,1,no comments,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:25,12/4/19 0:26,1,1,1,-3,6,11,4,2,4,3,1,,33,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:25,12/4/19 0:26,1,1,1,2,6,6,4,3,4,2,1,,38,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:24,12/4/19 0:27,1,1,1,2,2,6,3,4,2,4,2,,36,1,,1,A3IP8WX9W9NAOD,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:25,12/4/19 0:27,1,1,1,2,3,4,2,2,5,3,2,,66,1,,1,,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:27,12/4/19 0:28,1,1,1,-1,7,8,1,4,4,3,2,,30,1,,1,No comment. Thanks.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:29,12/4/19 0:30,1,1,1,-2,8,2,2,3,5,2,2,,35,1,,1,higher reward,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:27,12/4/19 0:30,1,1,1,-3,7,3,2,2,4,4,1,,42,1,,1,"I liked this study, I can remember seeing how happy my 12 year old twin boys were when we went to The Kennedy Space Center.",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:29,12/4/19 0:31,1,1,1,-1,6,4,1,3,4,4,1,,27,3,,1,Everything was straighforward,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:29,12/4/19 0:31,1,1,1,2,9,4,4,2,5,1,1,,39,1,,1,no issues it was fine,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:29,12/4/19 0:31,1,1,1,1,9,2,1,2,5,2,2,,36,7,"Asian, White",1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:28,12/4/19 0:31,1,1,1,3,5,9,3,3,4,3,2,,47,1,,1,"I think the duration estimate for this one was a little low, as it took awhile to think about the questions",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:31,12/4/19 0:31,1,1,1,-2,7,3,3,2,5,3,1,,29,1,,1,no,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:29,12/4/19 0:31,1,1,1,2,5,6,6,3,4,4,2,,32,2,,1,higher reward,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:34,12/4/19 0:36,1,1,1,-1,8,2,2,2,5,5,2,,28,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:29,12/4/19 0:36,1,1,1,-2,2,1,1,2,6,2,3,nonbinary,27,3,,1,no,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:35,12/4/19 0:37,1,1,1,2,7,13,4,2,4,5,1,,25,1,,1,None great job!,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:31,12/4/19 0:37,1,1,1,-1,7,4,1,2,4,2,1,,28,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:35,12/4/19 0:37,1,1,1,0,4,3,3,3,4,1,2,,69,1,,1,Nothing I can think of.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:35,12/4/19 0:38,1,1,1,-3,4,8,8,3,4,3,1,,34,1,,1,"Pay could be higher, this hit was about a $5 per hour pay rate. ",2,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:39,12/4/19 0:40,1,1,1,2,4,6,6,3,4,1,1,,30,4,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:36,12/4/19 0:40,1,1,1,-2,6,8,7,3,3,3,2,,26,2,,1,No,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:36,12/4/19 0:42,1,1,1,-2,8,5,5,3,5,1,1,,36,3,,1,Time estimate should be roughly doubled considering that participants have to think back and take a mental inventory of their prior purchases.,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:42,12/4/19 0:43,1,1,1,-3,10,15,15,4,1,3,1,,27,1,,1,Nothing at all everything went smoothly ,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:41,12/4/19 0:43,1,1,1,-2,5,6,6,3,3,2,1,,28,1,,1,Great survey in my opinion.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:43,12/4/19 0:45,1,1,1,2,8,2,2,2,6,2,1,,39,1,,1,no,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:44,12/4/19 0:46,1,1,1,1,5,9,5,2,4,2,1,,36,1,,1,"no, thank you!",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:44,12/4/19 0:46,1,1,1,0,8,1,1,2,5,1,1,,23,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:45,12/4/19 0:47,1,1,1,2,8,3,3,2,4,1,1,,41,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:44,12/4/19 0:47,1,1,1,1,8,3,1,2,4,1,2,,43,3,,1,very good job,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:44,12/4/19 0:47,1,1,1,1,9,1,1,2,5,1,2,,55,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:46,12/4/19 0:47,1,1,1,-3,7,5,5,2,3,4,1,,31,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:46,12/4/19 0:49,1,1,1,-3,4,6,6,2,4,2,1,,52,1,,1,n/a,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:48,12/4/19 0:50,1,1,1,0,5,4,4,3,4,1,1,,43,1,,1,"No, but thank you for being concerned enough to ask. You're a good person.",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:49,12/4/19 0:51,1,1,1,1,4,15,10,3,3,2,1,,36,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:50,12/4/19 0:51,1,1,1,-2,5,9,6,3,4,2,1,,29,1,,1,Creating attention checks before the bubble survey to ensure your data is valid.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:48,12/4/19 0:52,1,1,1,-2,5,6,6,4,4,1,2,,36,1,,1,None come to mind.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:48,12/4/19 0:54,1,1,1,-2,6,5,1,2,4,5,2,,28,2,,1,No. Everything seems fine to me.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:50,12/4/19 0:54,1,1,1,-2,5,13,5,3,3,3,2,,45,4,,1,no,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:53,12/4/19 0:55,1,1,1,-2,6,8,8,4,4,1,1,,54,1,,1,nothing,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:54,12/4/19 0:56,1,1,1,1,7,4,4,2,4,3,1,,33,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:55,12/4/19 0:57,1,1,1,-3,4,5,5,3,4,2,2,,37,1,,1,"I think things are great as is! Appreciate being able to participate! A lot of MTurkers really do need cash (myself included) so any higher reward you would like to give would be amazing, but I think the time taken during this survey is just fine for the reward of the HIT. Take care!",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:57,12/4/19 0:58,1,1,1,2,6,9,5,3,3,3,1,,23,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:57,12/4/19 0:59,1,1,1,2,5,11,4,2,4,8,2,,32,1,,1,I do not think any improvement is needed.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:59,12/4/19 1:00,1,1,1,-2,4,15,14,3,3,4,1,,36,6,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:58,12/4/19 1:00,1,1,1,2,3,5,1,3,3,3,1,,42,1,,1,More time to complete,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:58,12/4/19 1:02,1,1,1,3,9,1,1,3,5,4,2,,31,4,,1,Nothing comes to mind. Everything is good!,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:00,12/4/19 1:04,1,1,1,-3,8,6,6,3,6,3,1,,24,1,,1,no,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:04,12/4/19 1:06,1,1,1,1,7,3,3,2,5,1,1,,30,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 0:58,12/4/19 1:06,1,1,1,1,8,4,2,3,5,3,2,,59,1,,1,Everything seems about right.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:04,12/4/19 1:07,1,1,1,3,8,2,2,3,5,1,1,,31,3,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:02,12/4/19 1:09,1,1,1,-1,8,4,1,2,4,2,2,,61,1,,1,Everything was clear and concise.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:09,12/4/19 1:11,1,1,1,3,5,5,5,3,4,1,1,,28,2,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:11,12/4/19 1:13,1,1,1,-3,4,4,4,3,5,1,2,,27,4,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:12,12/4/19 1:14,1,1,1,2,4,10,3,2,4,3,1,,32,4,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:15,12/4/19 1:17,1,1,1,0,7,14,1,3,2,2,2,,33,7,mixed,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:17,12/4/19 1:18,1,1,1,2,8,4,4,2,5,1,1,,35,1,,1,no,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:17,12/4/19 1:18,1,1,1,-1,5,3,3,4,4,1,1,,29,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:17,12/4/19 1:19,1,1,1,3,6,3,1,2,4,2,1,,36,1,,1,none,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:19,12/4/19 1:20,1,1,1,3,5,6,6,3,4,1,1,,41,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:22,12/4/19 1:23,1,1,1,2,9,5,5,4,6,1,2,,24,4,,1,,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:21,12/4/19 1:28,1,1,1,-1,7,7,7,4,4,1,2,,53,2,,1,,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:28,12/4/19 1:30,1,1,1,-1,5,10,6,3,3,3,1,,35,4,,1,No.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:45,12/4/19 1:46,1,1,1,-3,9,1,1,3,6,1,2,,34,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:49,12/4/19 1:52,1,1,1,3,9,3,1,2,5,3,1,,37,1,,1,Higher reward,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:48,12/4/19 1:52,1,1,1,-2,7,9,9,4,3,3,1,,25,4,,1,Make the instruction clear,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:52,12/4/19 1:53,1,1,1,-2,7,15,1,4,4,5,2,,42,1,,1,No,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:55,12/4/19 1:57,1,1,1,1,5,8,6,4,3,3,2,,52,1,,1,no comments,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:57,12/4/19 2:00,1,1,1,2,7,8,9,3,3,4,1,,35,4,,1,reward higher,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 1:58,12/4/19 2:00,1,1,1,-3,7,11,8,2,4,2,1,,31,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:03,12/4/19 2:04,1,1,1,-2,8,3,3,2,5,1,1,,32,1,,1,no,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:04,12/4/19 2:05,1,1,1,2,8,11,11,3,3,4,1,,34,1,,1,Higher reward ,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:10,12/4/19 2:13,1,1,1,2,6,6,6,2,4,2,1,,49,1,,1,All good. Thank you.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:12,12/4/19 2:13,1,1,1,-2,5,7,2,3,4,5,2,,44,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:14,12/4/19 2:15,1,1,1,2,8,2,2,2,5,2,1,,30,1,,1,idk,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:17,12/4/19 2:19,1,1,1,3,4,15,15,3,2,2,1,,30,1,,1,None that I saw.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:20,12/4/19 2:22,1,1,1,1,8,3,2,3,6,3,1,,38,1,,1,I thought everything was okay.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:24,12/4/19 2:26,1,1,1,2,5,6,6,2,4,1,2,,69,1,,1,Everything was great.  Thanks,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:29,12/4/19 2:30,1,1,1,1,4,7,7,3,4,2,2,,24,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:31,12/4/19 2:34,1,1,1,3,4,2,2,2,3,3,2,,38,1,,1,Everything was good with good pay,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:32,12/4/19 2:34,1,1,1,-3,5,7,5,2,4,5,1,,35,4,,1,None. Thank you!,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:33,12/4/19 2:34,1,1,1,2,3,11,11,3,3,2,2,,41,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:28,12/4/19 2:34,1,1,1,-3,4,7,7,4,3,2,2,,55,1,,1,"When people ask about SES, they assume that yearly income informs assets.  It does, but I am lucky to have assets that make me much more comfortable.  Best of luck in your research",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:34,12/4/19 2:36,1,1,1,-3,3,13,13,3,3,3,1,,49,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:36,12/4/19 2:38,1,1,1,3,4,1,1,3,5,1,1,,52,1,,1,I don't know.,2,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:33,12/4/19 2:38,1,1,1,3,5,9,9,2,3,3,1,,38,2,,1,n/a,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:39,12/4/19 2:40,1,1,1,2,5,6,6,4,4,4,2,,30,2,,1,none,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:35,12/4/19 2:41,1,1,1,-1,5,8,8,3,3,1,2,,31,3,,1,none,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:41,12/4/19 2:43,1,1,1,2,5,7,7,3,4,1,2,,36,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:41,12/4/19 2:43,1,1,1,3,5,6,1,2,4,3,2,,59,1,,1,very well written - thank you.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:42,12/4/19 2:44,1,1,1,2,7,5,2,2,4,3,1,,31,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:48,12/4/19 2:48,1,1,1,1,4,5,5,3,3,2,1,,22,4,,1,It was fun.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:48,12/4/19 2:51,1,1,1,-1,6,8,1,2,4,4,1,,52,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:51,12/4/19 2:52,1,1,1,-2,8,4,4,2,6,5,2,,35,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:51,12/4/19 2:53,1,1,1,-2,5,9,1,2,4,5,2,,37,1,,1,I think they are great just how they are.,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:53,12/4/19 2:56,1,1,1,2,5,6,4,2,4,2,1,,32,2,,1,No,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:55,12/4/19 2:56,1,1,1,3,6,7,2,3,4,3,1,,25,4,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:57,12/4/19 2:58,1,1,1,0,5,9,7,3,4,2,1,,43,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:52,12/4/19 2:59,1,1,1,2,3,4,4,3,3,3,1,,26,1,,1,n/a,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 2:59,12/4/19 3:00,1,1,1,2,6,5,5,2,4,1,1,,31,1,,1,"nope, was quite clear",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 3:01,12/4/19 3:03,1,1,1,-3,4,15,5,4,3,3,1,,58,1,,1,all good!,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 3:01,12/4/19 3:04,1,1,1,-2,6,14,13,4,4,2,1,,41,1,,1,"Everything was fine.  Just a small typo -- the last option on the income bracket should read 150,001 instead of 140,001.",1,-1
+Default Response Set,Anonymous,,,0,12/4/19 3:10,12/4/19 3:12,1,1,1,-3,7,3,3,4,5,1,1,,39,1,,1,,1,-1
+Default Response Set,Anonymous,,,0,12/4/19 3:22,12/4/19 3:24,1,1,1,3,9,2,2,2,5,1,1,,23,1,,1,"No, it's fine",1,-1

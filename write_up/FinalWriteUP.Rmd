@@ -1,0 +1,398 @@
+---
+title: "Replication of Experiential or Material Purchase? Social Class Determines Purchase Happiness. Lee, Hall & Wood (2018, Psychological Science)"
+author: "Elizabeth Mortenson (mortenson@stanford.edu)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+---
+
+## Introduction
+
+The selected Lee, Hall, & Wood, 2018 article replicated the finding that experiential purchases yielded greater happiness than material goods. Given resource distribution varies widely across the population, the authors posited that socio-economic status (IV) would play a significant role in individuals' self-evaluations of subjective happiness (DV) when reflecting on apportioned financial resouces. The authors define *experiential advantage* as experiential purchases generating more happiness than material purchases. Findings from Study 1 (to be replicated) indicate differential effects of SES, such that participants from lower-income backgrounds were happier with material purchases (as compared to spending money on experiences) while individuals from higher-income backgrounds reported experiential advantage.
+
+Results are of value to my research program along two key dimensions. First, methodologically, the modifications made in the original study to the established measure offer an opportunity for me to explore how improved scale design (particularly of extant measures) can lead to more informative data. Second, theoretically, through this process I'm excited to understand how subjective assessment measures can be combined with straight-forward survey design and applied broadly to examine racialized experiences. For example, this approach might be useful for a future research question investigating whether framing biased behaviors or beliefs along a continuum yields significantly different results from a dichotomous scale. 
+
+### Procedures
+
+The selected study was an attempt to replicate a Van Boven and Gilovich (2003) design; however, Lee et al. (2018), incorporated some important modifications, which will be noted throughout the procedures write-up where appropriate. 
+
+Participants were first given a computer-based survey using Amazon's Mechanical Turk (AMT) and prompted to recall a _recent_* "experiential purchase and object purchase" that lead to an increase in their happiness. Next, participants were asked which purchase made them happier. The presented scale was: -3 = Definitely experiential purchase, 3 = Definitely object purchase.**
+
+Afterward, using the MacArthur Scale of Subjective Social Status, participants were presented with a visual of a ladder consisting of 10 steps. Subjects were instructed to think of the ladder as representing their position in society, with the most educated and wealthy at the top and people with the least respected jobs and education at the bottom. 
+
+One challenge to reproducing this finding might be that I am relatively new to AMT, RStudio and programming more generally. Therefore, I anticipate there will likely be some time-management concerns, insofar as it will likely be difficult to accurately predict how long certain tasks should take to complete.
+
+*Instead of having participants compare experiential purchases versus material acquistion from a global perspective (across the lifespan) as in the original, Lee et al. had participants compare more local (recent) spending.
+
+**The current study employs a continuous scale for comparative purchase happiness rather than the dichotomous scale used in the original.     
+
+## Methods
+
+### Power Analysis
+
+Although it wasn't reported in the original publication, I calculated the Pearson's correlation for the original data set and found .2294087, which I used as the effect size for my power analysis. Based on this value, the study should include 146 participants (80% power), 195 participants (90% power), or 241 participants (95% power). These values were calculated using G*Power.
+
+Participants in the pilot took 2 minutes on average and will be compensated 25 cents per HIT.
+
+![](/Users/homefolder/Desktop/lee2018/images/PowerAnalysis.png)
+
+
+### Planned Sample
+
+Planned sample should have approximately the same demographic characteristics as that in the original study because of AMT recruitment, which was as follows: "...209 adult U.S. residents participated on Amazon Mechanical Turk (52% women; age: M = 38.39 years, SD = 12.83). The target sample size (N = 200) was determined before data collection began, and a total of 209 participants actually completed the study." No participants will be excluded, however, and we intend to recruit 146 participants on MTurk based on power analysis, which should give us 80% power.
+
+### Materials
+
+Study materials were made publicly available on the Open Science Framework (OSF), thus, stimuli used in this reproduction are expected to be the same as the original study (see ladder visual below).
+
+**Measure of Comparative Purchase Happiness**:
+"Comparative purchase happiness was assessed with the question, “Between the two purchases, which made you happier?” Responses were reported on a 7-point scale from −3 (definitely experiential purchase) to 3 (definitely object purchase)."
+
+**Measure of Social Class**:
+"Participants were shown a ladder with 10 rungs and given the following instructions:
+Think of this ladder as representing where people stand in the U.S. At the top of the ladder are the people who are the best off—those who have the most money, the most education, and the most respected jobs. At the bottom are the people who are the worst off—who have the least money, least education, and the least respected jobs or no job. The higher up you are on this ladder, the closer you are to the people at the very top; the lower you are, the closer you are to the people at the very bottom."
+
+![](/Users/homefolder/Desktop/lee2018/images/lee_ladder_stimuli.png)
+
+
+### Procedure	
+
+Procedures were followed precisely and are outlined, largely verbatim, below: 
+
+"Participants were asked to 'think about a recent experiential purchase and object purchase that you made to increase your happiness.' No further information about the definition of these purchases was given."
+
+"Next, participants reported their social class using the MacArthur Scale of Subjective Social Status...In the past, researchers have measured social class through objective indicators of income, education, or occupation or have used the MacArthur Scale to capture subjective assessment of all three aspects." 
+
+Next, participants were presented with eight demographics questions, including:  
+1. About how much is your yearly family income?  
+2. About how much is your yearly personal income?  
+3. What is the highest level of education you have completed?  
+4. What would you describe your family and yourself?  
+5. Currently, what is the number of your household? (If a father, a mother, and a child are living together, then the answer would be 3.)  
+6. What is your gender?  
+7. How old are you? (in years)  
+8. What is your race?
+
+__Link to Qualtrics Replication__
+
+https://stanforduniversity.qualtrics.com/jfe/form/SV_cvyQcGW8h07edXn
+
+__Link to Pre-Registration__
+
+https://osf.io/72w89/
+
+__Link to Repository on GitHub__
+
+https://github.com/elmortenson/lee_2018
+
+### Analysis Plan
+
+My analyses will attempt to replicate the regression from the original paper. I will also calculate the Pearson's r correlation for the original data and new data set. 
+
+**Key analysis of interest** 
+
+Key confirmatory analysis will be "a regression analysis predicting comparative purchase happiness from social class," as stated in original publication, which "revealed that social class positively predicted happiness." My analytic approach should replicate, and therefore generate, something closely approximating the correlation of the original figure. My current analytic plan does not include standardizing the beta. Both the IV (SES measure) and DV (subjective happiness rating) require reverse coding. 
+
+
+**Strategy**  
+
+1. Exclusions: Currently plan to include all participants, as the original study had no exclusions.
+
+2. Cleaning: Tidy data by removing unnecessary columns (e.g., start date, end date, etc.), convert from wide to long, and ensure item values are accurately coded and that question labels from the build-phase translate to being intuitive for data analysis. 
+
+3. Analysis: Run a linear regression to see whether SES predicts subjective happiness rating. The original figure indicates that the authors found values where "comparative purchase happiness was significantly different from 0." My planned analytic approach to this part of the graph was to determine these values using confidence intervals around the fixed values of the regression line and finding the values at which (out to two decimal places) the intervals are no longer inclusive of zero.
+
+### Differences from Original Study
+
+The replication was nearly identical to the original in terms of procedure, sample and materials (but see below for two minor additions to survey administration.)
+
+### Methods Addendum (Post Data Collection)
+
+#### Actual Sample
+
+Per our data collection plan, we recruited 146 participants using Amazon Mechanical Turk, and 147 participants ultimately completed the survey for a total sample of 147 participants (age: M = 36.56 years, SD = 9.84), comprised of 38% women, which created a bit of an uneven gender distribution, which made the sample slightly unlike that in the original paper, although still similar (original sample: 52% women; age: M = 38.39 years, SD = 12.83). There were no exclusions. 
+
+#### Differences from pre-data collection methods plan
+
+Our design had two slight modifications intended to provide further clarity for participants; first, instructions were added, which were sourced from the materials registered by the authors for Study 2 of the paper, and stated, "We are interested in how you spend your discretionary money. Discretionary money refers to money spent with the intent of furthering your happiness. This excludes money spent on everyday necessities such as toiletries and utility bills." Second, an operationalization of the terms *material purchase* and *experiential purchase* were included, also taken from the materials provided by the authors for Study 2 on the OSF. 
+
+## Results
+
+
+### Data preparation
+
+```{r}
+library("tidyverse")                      # loading libraries
+library("haven")                          # this one is needed to import SPSS file
+```
+
+
+#### Import the data
+```{r Import data}
+lee <- read_csv("251_Reproduce_deidentified.csv")                   # import replication data set
+original.d <- read_spss("Lee et al.(2018) Study 1 Data_Original.sav")   # original data 
+```
+
+
+
+### Data Preparation
+
+Now we'll remove the first row from the final data set and select relevant columns. 
+```{r Removing rows and columns}
+
+lee2 <- lee %>% 
+  filter(!((V2 == "ResponseSet") |
+           V2 == "{\"ImportId\":\"responseset\"}")) %>% 
+
+  mutate(subid = row_number()) %>%                                # inserting subject ID row
+  select(contains("subid"), CompHap, MacArthurSES)                # selecting relevant columns
+
+```
+
+
+We need to recode the IV and DV so we'll first make those columns numeric, and then we'll do the actual recoding (in the second chunk) and rename columns.
+
+```{r Recode and rename variables}
+
+lee2$CompHap <- as.numeric(lee2$CompHap)                        # making character class numeric
+lee2$MacArthurSES <- as.numeric(lee2$MacArthurSES) 
+
+# Recoding IV and DV and renaming
+
+d <- lee2 %>%         
+  mutate(ComparativeHappiness=CompHap*-1) %>%                   # recoding happiness measure
+  mutate(MacArthurScale=recode(lee2$MacArthurSES,               # recoding socioeconomic measure
+                  `1` = 10, `2` = 9, `3` = 8,
+                  `4` = 7, `5` = 6, 
+                  `6` = 5, `7` = 4, 
+                  `8` = 3, `9` = 2, `10` = 1))
+```
+
+*Plotting the data*
+
+Below is the plot of the final data set from the replication: color coding reflects levels of the IV (socioeconomic status as measured by the MacArthur Scale of Subjective Social Status). Notably, the data in this plot appears to be largely random (see Exploratory Analysis below for a plot of the original data). 
+
+```{r}
+
+p <- ggplot(d, aes(MacArthurScale, ComparativeHappiness))              # generate plot and labels
+p + labs(y = "Comparative Purchase Happiness (Object -> Experiential)",   
+         x = "MacArthur Socioeconomic Status", 
+         title = "Visualizing with Plot of Raw Data", 
+         colour = "SES (MacArthur Scale)")  +
+geom_hline(yintercept=0, color = "black") +                            # midline
+  
+geom_jitter(aes(colour = factor(MacArthurScale)), size = 2) +          # separate data points
+  theme(axis.line = element_line(),                                    # make visible y-axis
+  panel.background = element_blank())                                  # remove background grid
+
+```
+
+
+### Confirmatory analysis (Graphing the Regression)
+
+__Original Figure from Lee et al. paper__
+![](/Users/homefolder/Desktop/lee2018/images/OriginalFigure.png)
+
+Below is my attempt to replicate the graph from Study 1.  
+
+```{r}
+
+figure <- d %>%
+ ggplot(aes(x = MacArthurScale, y = ComparativeHappiness)) +     # generate the plot
+ geom_smooth(method = "lm", fill = NA)                           # create regression line
+
+figure + geom_hline(yintercept=0, color = "black") +             # label the graph
+  xlim(c(1, 10)) +
+  labs(x = "Social Class (Mac Arthur Scale)", 
+       title = "Attempted Regression Replication") +
+  labs(y = "Comparative Purchase Happiness")  +
+  ggthemes::theme_few()  
+
+```
+
+
+The regression line does not indicate a strong relationship between social class and comparative purchase happiness. The very small trend that appears is in the opposite direction of the original regression line. Next we'll look at the correlations. 
+
+#### Pearson's r
+
+Before we can compare the effect size of each study (as represented by the Pearson's r values), we'll need to calculate the correlation of the original data. This will require a bit of data cleaning first. 
+
+
+```{r}
+
+original.d2 <- original.d %>%                             # selecting relevant columns
+  select(ComparativeHappiness:MacArthurScale)
+  #mutate(subid = row_number())
+
+original.d2$ComparativeHappiness <-                       # making values numeric
+  as.numeric(original.d2$ComparativeHappiness)
+original.d2$MacArthurScale <- 
+  as.numeric(original.d2$MacArthurScale)
+   
+original.d3 <- original.d2 %>%                            # new columns with recoding
+  mutate(happy=ComparativeHappiness*-1) %>%
+  mutate(SES=recode(MacArthurScale, 
+                    '1' = 10, '2' = 9, '3' = 8,
+                    '4' = 7, '5' = 6, '6' = 5,
+                    '7' = 4, '8' = 3, '9' = 2, 
+                    '10' = 1))
+```
+
+
+Now we'll calculate the correlations.
+
+```{r}
+cor(original.d3$happy, original.d3$SES)        # calculate Pearson's r for original study
+
+cor(d$ComparativeHappiness, d$MacArthurScale)  # and find Pearson's r for replication attempt
+```
+
+
+*Getting sample descriptives before moving to exploratory analysis* 
+
+  
+```{r}
+lee3 <- lee %>% 
+  filter(!((V2 == "ResponseSet") |
+           V2 == "{\"ImportId\":\"responseset\"}")) 
+
+lee3$dem_age <-                                       # making values numeric
+  as.numeric(lee3$dem_age)
+
+mean.age <- round(mean(lee3$dem_age), digit=2)        # calculating the average age of the sample          
+ mean.age
+ 
+sd.age <- round(sd(lee3$dem_age), digit=2)            # calculating the SD of age 
+ sd.age   
+ 
+```
+
+
+*Proportion of male/female*
+
+```{r}
+
+count.lee <- lee3 %>%                                 # grouping to get gender totals
+  group_by(dem_gender) %>%
+    tally()
+
+per.female.lee <-                                    # calculalting percentages
+  round(count.lee[2,2]/147, digits = 2)
+propor.f <- per.female.lee*100                       # create variable with % of female
+propor.f
+
+```
+
+
+### Exploratory analyses 
+
+We'll start by just plottting the origial data.
+```{r}
+
+u <- ggplot(original.d3, aes(MacArthurScale, ComparativeHappiness))
+u +  geom_jitter(aes(colour = factor(MacArthurScale) ), size = 3) +
+     geom_hline(yintercept=0, color = "black") 
+ 
+```
+
+
+
+#### Exploratory analyses (Confidence Intervals)
+
+Now we'll use CIs to locate estimates where values differ significanlty from zero, which should allow us to recreate the dashed lines from the original graph in Study 1.  
+
+*Visualizing the CIs*
+
+```{r}
+
+# start by visualizing the intervals around the regression line
+
+figure <- d %>%
+ ggplot(aes(x = MacArthurScale, y = ComparativeHappiness)) +         # create the plot
+ geom_smooth(method = "lm")                                          # add regression and CIs
+
+figure + geom_hline(yintercept=0, color = "black") +                 # tidy up graph with labels
+    xlim(c(1, 10)) + labs(x = "Social Class (Mac Arthur Scale)", 
+       title = "Regression With CIs") +
+    labs(y = "Comparative Purchase Happiness")  +
+    ggthemes::theme_few()  
+
+# the dashed lines we wanted to recreate from the original graph would have been added with the code that's commented out below
+
+ # geom_vline(xintercept = XX, linetype="dashed", color = "blue") +
+ # geom_vline(xintercept = XX, linetype="dashed", color = "blue")
+
+```
+
+Without even calculating the specific values we can see from the graph above that there is no point at which the confidence intervals aren't inclusive of zero, but let's pull the numbers.
+
+*Confidence intervals for fitted values in a linear regression*
+
+```{r CI to determine where y significantly differs from 0}
+
+l <- lm(ComparativeHappiness~MacArthurScale,data=d)  # run regresssion & assign variable
+
+l.predict <- predict(l,newdata = data.frame          # generates a list of CIs for each IV value
+        (MacArthurScale=d$MacArthurScale),
+        interval="confidence",level = 0.95)          # assigns 95% confidence 
+
+head(l.predict,10)                                   # lists only first 10 values                   
+
+```
+
+At 95% confidence there are no significant values, but perhaps if we make our prediction window more conservative and lower our confidence we can get something similar to the original graph. Let's try running it at 90% confidence.
+
+```{r}
+
+l <- lm(ComparativeHappiness~MacArthurScale,data=d)         # run regresssion & assign variable
+
+l.predict.smaller <- predict(l,newdata = data.frame         # generate CIs for each IV value
+        (MacArthurScale=d$MacArthurScale),
+        interval="confidence",level = 0.90)                 # use 90% confidence
+
+head(l.predict.smaller,10) 
+
+```
+And we can see that there are no values above that don't include zero. Still, we'll now try to pinpoint where comparative purchase happiness may have significantly differed from zero using the process and code that follows. 
+
+Integers listed in the table above that had CIs which were non-inclusive of zero could have next been reviewed manually using the code below to determine where estimates were signficantly different from zero (out to two decimal places).
+
+```{r narrow down significant values}
+
+ci = predict(l,newdata = data.frame             # 7.02 is an example value we could test
+             (MacArthurScale=7.02), 
+             interval="confidence",level = 0.95)
+```
+
+
+
+
+#### Exploratory analyses (p-values)
+
+Okay, so now we'll generate regression tables to determine the p-values. This may provide us with another measure of the relative success or failure of our project. 
+
+
+```{r}
+ summary(lm(ComparativeHappiness~MacArthurScale,data=d))    # replication data 
+
+ summary(lm(happy~SES,data=original.d3))                    # original data
+```
+
+P-values for the two studies are quite different. We can see that for the replication the value is non-significant (p = .844) and for the original study the p-value is highly significant (p=.000).
+
+
+## Discussion
+
+### Summary of Replication Attempt
+
+The project set out to replicate the key finding from Study 1 in Lee et al.'s 2018 article, which was that socioeconomic status predicted comparative purchase happiness--specifically that those from lower income backgrounds reported greater levels of material advantage and those from higher income backgrounds reported experiential advantage. We were looking for a comparable effect size, here defined as Pearson's r. 
+
+The graph plotting the regression failed to replicate. Our Pearson's r correlation values (.229 for the original data and -0.016 for the replication) corroborate what we saw on the graph, which is that this replication attempt was unsuccesful: correlation strength is not comparable and the direction was reversed. In fact, the trend of our regression line would imply that people in our sample from lower SES backgrounds were ever so slightly more likely to report experiential advantage than those from higher SES backgrounds. However, because our findings were completely non-significant (p = .844), unlike the original study (p = .000) we can't make any assertions about the possible relationship between these two varaibles.
+
+### Commentary
+
+Our replication was a robust failure. Because the study was conducted relativley recently, all the study materials were provided on the Open Science Framework, and the sample was recruited in an identical method to the original (yielding a very similar sample), it seems unlikely that procedural differences or cultural shifts contributed most to the failed outcome. We did make two minor adjustments to the paradigm; the first was that we included instructions, which were copied from the Study 2 materials registered on the OSF, and the second was operationalizing *experiential purchase* and *material purchase* for participants on MTurk. In my estimation, these changes perhaps strengthened the design, and the larger factors influencing the failure were: a) use of a single-question DV, b) lack of attention checks which undergirded c) no participant exclusions and d) possibly high task demands as questions were fairly face valid. The exploratory analyses were useful in that they provided mulitple angles and measures from which to see the experimental design of the original study failing to capture the intended construct. Although we reached out to the author he did not contact us with feedback, challenges or objections to the experimental paradigm. 
